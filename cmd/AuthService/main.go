@@ -24,7 +24,7 @@ func (m *mockEmailService) SendIPChangeWarning(userID uuid.UUID, oldIP, newIP st
 }
 
 func main() {
-	if err := godotenv.Load("../../.env"); err != nil {
+	if err := godotenv.Load("/app/.env"); err != nil {
 		log.Printf("Warning: Error loading .env file: %v", err)
 	}
 
