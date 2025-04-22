@@ -9,6 +9,7 @@
 
 token-type - позволяет обновлять как по RefreshToken, так и по AccessToken.
 При этом: Access токен при активации - блокирует, как свое повторное использование, так и использование выданного с ним RefreshToken
+
 Пример .env файла
 
 JWT_SECRET=Pushkin
