@@ -9,3 +9,17 @@
 
 token-type - позволяет обновлять как по RefreshToken, так и по AccessToken.
 При этом: Access токен при активации - блокирует, как свое повторное использование, так и использование выданного с ним RefreshToken
+Пример .env файла
+
+JWT_SECRET=Pushkin
+DB_HOST=postgres
+DB_PORT=5432
+DB_USER=Dostoevsky
+DB_PASSWORD=553782
+DB_NAME=AuthDB
+DB_SSLMODE=disable
+SERVER_PORT=8080
+ACCESS_TOKEN_TTL=15m
+REFRESH_TOKEN_TTL=24h
+DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@postgres:5432/${DB_NAME}?sslmode=DB_SSLMODE
+
